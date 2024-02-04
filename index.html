@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Задание: Создание регистрационной формы -->
+<!-- 
+    Создайте HTML-страницу с заголовком "Регистрация".
+    Внутри страницы добавьте форму с использованием тега <form>.
+    Добавьте следующие поля ввода:
+    Имя (текстовое поле)
+    Фамилия (текстовое поле)
+    Электронная почта (текстовое поле с типом email)
+    Пароль (поле для ввода пароля)
+    Пол (выбор из опций: Мужской, Женский, Другой)
+    Дата рождения (поле для ввода даты)
+    Согласие с условиями использования (чекбокс)
+    Добавьте кнопку "Зарегистрироваться" для отправки формы.
+    Примените атрибуты required к полям по выбору, чтобы обеспечить обязательное заполнение.
+    Подсказка: Используйте различные типы полей ввода, атрибуты и метки (теги <label>) для лучшей доступности и пользовательского опыта.
+    Учтите, что это всего лишь основа, и по желанию вы можете расширить форму и добавить стили для лучшего визуального восприятия. -->
+
+        <h1>Регистрация</h1>
+        <form action="">
+            <br>
+            <label>
+                <p>Имя</p>
+                <input type="text" name="Имя" placeholder="Имя" required>        
+            </label>
+            <br>
+            <label>
+                <p>Фамилия</p>
+                <input type="text" name="Фамилия" placeholder="Фамилия" required>        
+            </label>
+            <label>
+                <p>Пол</p>
+                <select name="gender" required>
+                    <option value="Мужской">male</option>
+                    <option value="Женский">female</option>
+                </select>
+            </label>
+            <label>
+                <p>Дата рождения</p>
+                <input type="date" required>
+            </label>
+            <label>
+                <p>email</p>
+                <input type="email" required>
+            </label>
+            <label>
+                <p>Password</p>
+                <input type="password" name="password"required>
+            </label>
+            <label>
+                <p>Согласие с условиями использования</p>
+                <input type="checkbox"  name="choice">
+            </label>
+            <br>
+            <br>
+            <button>Зарегистрироваться</button>
+        </form>
+</body>
+</html>
