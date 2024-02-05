@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     
@@ -23,45 +24,54 @@
     Примените атрибуты required к полям по выбору, чтобы обеспечить обязательное заполнение.
     Подсказка: Используйте различные типы полей ввода, атрибуты и метки (теги <label>) для лучшей доступности и пользовательского опыта.
     Учтите, что это всего лишь основа, и по желанию вы можете расширить форму и добавить стили для лучшего визуального восприятия. -->
-
-        <h1>Регистрация</h1>
-        <form action="">
-            <br>
-            <label>
-                <p>Имя</p>
-                <input type="text" name="Имя" placeholder="Имя" required>        
-            </label>
-            <br>
-            <label>
-                <p>Фамилия</p>
-                <input type="text" name="Фамилия" placeholder="Фамилия" required>        
-            </label>
-            <label>
-                <p>Пол</p>
-                <select name="gender" required>
-                    <option value="Мужской">male</option>
-                    <option value="Женский">female</option>
-                </select>
-            </label>
-            <label>
-                <p>Дата рождения</p>
-                <input type="date" required>
-            </label>
-            <label>
-                <p>email</p>
-                <input type="email" required>
-            </label>
-            <label>
-                <p>Password</p>
-                <input type="password" name="password"required>
-            </label>
-            <label>
-                <p>Согласие с условиями использования</p>
-                <input type="checkbox"  name="choice">
-            </label>
-            <br>
-            <br>
-            <button>Зарегистрироваться</button>
-        </form>
+        <div class="creatHead">
+            <h1>Регистрация</h1>
+            <img src="https://resizer.mail.ru/p/75324337-fb15-555a-a2e7-398e5079b851/AQAKeQiw7SdEcxPVVu1Y2WcBwl8BJ_I17k3N29pNJpI4k49NGMiCdM2j5UR0sEjDfxWQALtjOA8CQjVShptW2t5mgug.jpg" alt="newAkk">
+        </div>
+        <div>
+            <div class="name">
+                <form>
+                    <br>
+                    <label>
+                        <p>Имя</p>
+                        <input type="text" name="Имя" placeholder="Имя" required>        
+                    </label>
+                    <br>
+                    <label>
+                        <p>Фамилия</p>
+                        <input type="text" name="Фамилия" placeholder="Фамилия" required>        
+                    </label>
+                    
+                </form>
+            </div>
+            <form>
+                <label>
+                    <p>Пол</p>
+                    <select name="gender" required>
+                        <option value="Мужской">male</option>
+                        <option value="Женский">female</option>
+                    </select>
+                </label>
+                <label>
+                    <p>Дата рождения</p>
+                    <input type="date" required>
+                </label>
+                <label>
+                    <p>email</p>
+                    <input type="email" required>
+                </label>
+                <label>
+                    <p>Password</p>
+                    <input type="password" name="password"required>
+                </label>
+                <label>
+                    <p>Согласие с условиями использования</p>
+                    <input type="checkbox"  name="choice">
+                </label>
+                <br>
+                <br>
+                <button>Зарегистрироваться</button>
+            </form>
+        </div>
 </body>
 </html>
